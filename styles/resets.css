@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Containers */
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.container-fluid {
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+/* For Texts */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+  font-family: Verdana, sans-serif;
+}
+
+p {
+  line-height: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--coffee-1);
+}
