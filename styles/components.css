@@ -20,45 +20,45 @@
 
 .section-title {
   font-size: 40px;
-  text-align: center;
-  color: var(--primary);
-  margin-bottom: 50px;
   font-weight: 900;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--primary);
 }
 
-/* Product Card */
+/* Cards */
 
-.product-card {
-  background-color: var(--coffee-0);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+.card {
   padding: 20px;
   border-radius: 10px;
+  background-color: var(--coffee-0);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.product-card .image-container {
+.card .image-container {
   height: 200px;
   overflow: hidden;
   border-radius: 5px;
 }
 
-.product-card .image-container img {
+.card .image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.product-card .text-container {
+.card .text-container {
   margin-top: 15px;
 }
 
-.product-card .text-container .product-title {
+.card .text-container .product-title {
   font-weight: bold;
   font-size: 20px;
   color: var(--coffee-8);
 }
 
-.product-card .price::before {
-  content: "₱";
+.card .description {
+  color: var(--coffee-7);
 }
 
 /* Separators */
@@ -81,13 +81,13 @@
 /* Buttons */
 
 .button {
-  padding: 15px 30px;
   border: 0;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.1s ease;
   font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 5px;
+  transition: 0.1s ease;
   text-decoration: none;
   display: inline-block;
 }
