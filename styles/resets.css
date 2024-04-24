@@ -5,22 +5,23 @@
   scroll-behavior: smooth;
 }
 
-/* Containers */
+/* For Fonts */
 
-.container {
-  width: 90%;
-  margin: auto;
+@font-face {
+  font-family: "Geist";
+  src: url("../assets/fonts/Geist-Regular.otf");
 }
 
-.container-fluid {
-  width: 90%;
-  margin: auto;
+@font-face {
+  font-family: "Geist";
+  src: url("../assets/fonts/Geist-Bold.otf");
+  font-weight: bold;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 1440px;
-  }
+@font-face {
+  font-family: "Geist";
+  src: url("../assets/fonts/Geist-UltraBlack.otf");
+  font-weight: 900;
 }
 
 /* For Texts */
@@ -34,11 +35,7 @@ h6,
 p,
 a,
 li {
-  font-family: Verdana, sans-serif;
-}
-
-p {
-  line-height: 30px;
+  font-family: "Geist";
 }
 
 a {

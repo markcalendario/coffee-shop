@@ -1,8 +1,29 @@
+/* Containers */
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.container-fluid {
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1980px;
+  }
+}
+
+/* Section Title */
+
 .section-title {
   font-size: 40px;
   text-align: center;
   color: var(--primary);
   margin-bottom: 50px;
+  font-weight: 900;
 }
 
 /* Product Card */
@@ -45,7 +66,7 @@
 .separator {
   font-weight: bold;
   font-size: 20px;
-  background-color: var(--coffee-8);
+  background-color: var(--primary);
   padding: 10px 20px;
   color: var(--coffee-0);
 }
