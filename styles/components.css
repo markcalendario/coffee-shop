@@ -10,11 +10,14 @@
 .product-card {
   background-color: var(--coffee-0);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .product-card .image-container {
   height: 200px;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .product-card .image-container img {
@@ -24,7 +27,7 @@
 }
 
 .product-card .text-container {
-  padding: 20px;
+  margin-top: 15px;
 }
 
 .product-card .text-container .product-title {
