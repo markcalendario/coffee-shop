@@ -157,7 +157,17 @@ header .container .wrapper nav a:hover {
   gap: 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1100px) {
+  #menu .container .wrapper .product-list {
+    flex-direction: row;
+  }
+
+  #menu .container .wrapper .product-list > * {
+    width: calc((100% - (15px * 3)) / 4);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1099px) {
   #menu .container .wrapper .product-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -165,12 +175,6 @@ header .container .wrapper nav a:hover {
 
   #menu .container .wrapper .product-list > * {
     width: calc((100% - (15px * 1)) / 2);
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  #menu .container .wrapper .product-list > * {
-    width: calc((100% - (15px * 3)) / 4);
   }
 }
 
