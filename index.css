@@ -63,39 +63,6 @@ header .container .wrapper nav a:hover {
   color: var(--primary);
 }
 
-@media screen and (max-width: 400px) {
-  header .container .wrapper .brand-container .title {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  header .container .wrapper #hamburger {
-    display: none;
-  }
-
-  header .container .wrapper nav {
-    position: unset;
-    display: flex;
-    width: unset;
-    height: unset;
-    flex-direction: row;
-    gap: 30px;
-    padding: 0;
-    background-color: transparent;
-  }
-
-  header .container .wrapper nav a {
-    padding: 10px;
-    color: var(--primary);
-  }
-
-  header .container .wrapper nav a:hover {
-    background-color: unset;
-    color: unset;
-  }
-}
-
 /* Hero */
 
 #hero {
@@ -120,23 +87,6 @@ header .container .wrapper nav a:hover {
   font-weight: 900;
 }
 
-@media screen and (min-width: 768px) {
-  #hero {
-    background-image: url("./assets/images/background-horizontal.jpg");
-    background-position: center;
-  }
-
-  #hero .container .wrapper .text-container {
-    text-align: unset;
-    max-width: 550px;
-  }
-
-  #hero .container .wrapper .text-container .tagline {
-    font-size: 60px;
-    line-height: 55px;
-  }
-}
-
 /* Products */
 
 #menu {
@@ -157,27 +107,6 @@ header .container .wrapper nav a:hover {
   gap: 15px;
 }
 
-@media screen and (min-width: 1100px) {
-  #menu .container .wrapper .product-list {
-    flex-direction: row;
-  }
-
-  #menu .container .wrapper .product-list > * {
-    width: calc((100% - (15px * 3)) / 4);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1099px) {
-  #menu .container .wrapper .product-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  #menu .container .wrapper .product-list > * {
-    width: calc((100% - (15px * 1)) / 2);
-  }
-}
-
 /* Services */
 
 #services {
@@ -188,18 +117,7 @@ header .container .wrapper nav a:hover {
 #services .container .wrapper .services-list {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-}
-
-@media screen and (min-width: 768px) {
-  #services .container .wrapper .services-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  #services .container .wrapper .services-list > * {
-    width: calc((100% - (25px * 1)) / 2);
-  }
+  gap: 15px;
 }
 
 /* About  */
@@ -241,27 +159,6 @@ header .container .wrapper nav a:hover {
   font-weight: bold;
 }
 
-@media screen and (min-width: 768px) {
-  #about .container .wrapper .about-content {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  #about .container .wrapper .about-content .text-container,
-  #about .container .wrapper .about-content .spot-container {
-    width: 50%;
-  }
-
-  #about .container .wrapper .about-content .spot-container {
-    text-align: center;
-  }
-
-  #about .container .wrapper .about-content .spot-container img {
-    max-width: 650px;
-    object-fit: cover;
-  }
-}
-
 /* Footer */
 
 footer {
@@ -292,15 +189,257 @@ footer .container .wrapper img {
 #reviews .container .wrapper .reviews-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
-@media screen and (min-width: 768px) {
-  #reviews .container .wrapper .reviews-list {
+/* Very Small */
+
+@media screen and (max-width: 576px) {
+  #hero {
+    padding-bottom: 500px;
+  }
+}
+
+/* Small */
+
+@media (min-width: 577px) and (max-width: 767px) {
+  #menu .container .wrapper .product-list {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  #reviews .container .wrapper .reviews-list .review-card {
-    width: calc((100% - (10px * 2)) / 3);
+  #menu .container .wrapper .product-list > * {
+    width: calc((100% - 15px) / 2);
+  }
+
+  #services .container .wrapper .services-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #services .container .wrapper .services-list > * {
+    width: calc((100% - 15px) / 2);
+  }
+
+  #reviews .container .wrapper .reviews-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #reviews .container .wrapper .reviews-list > * {
+    flex: 1;
+    flex-basis: calc((100% - 15px) / 2);
+  }
+}
+
+/* Medium Devices */
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #hero {
+    background-image: url("./assets/images/background-horizontal.jpg");
+    background-position: center;
+  }
+
+  #hero .container .wrapper .text-container {
+    text-align: left;
+    text-shadow: 1px 1px 5px black;
+    max-width: 500px;
+  }
+
+  #menu .container .wrapper .product-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #menu .container .wrapper .product-list > * {
+    width: calc((100% - (15px * 2)) / 3);
+  }
+
+  #services .container .wrapper .services-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #services .container .wrapper .services-list > * {
+    width: calc((100% - 15px) / 2);
+  }
+
+  #reviews .container .wrapper .reviews-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #reviews .container .wrapper .reviews-list > * {
+    flex: 1;
+    flex-basis: calc((100% - (15px * 2)) / 2);
+  }
+}
+
+/* Large Devices */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  header .container .wrapper #hamburger {
+    display: none;
+  }
+
+  header .container .wrapper #nav {
+    position: unset;
+    background-color: unset;
+    height: unset;
+    width: unset;
+    padding: unset;
+    margin: unset;
+    flex-direction: row;
+    display: flex;
+  }
+
+  header .container .wrapper #nav a {
+    color: var(--primary);
+  }
+
+  #hero {
+    background-image: url("./assets/images/background-horizontal.jpg");
+    background-position: center;
+  }
+
+  #hero .container .wrapper .text-container {
+    text-align: left;
+    text-shadow: 1px 1px 5px black;
+    max-width: 700px;
+  }
+
+  #menu .container .wrapper .product-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #menu .container .wrapper .product-list > * {
+    width: calc((100% - (15px * 2)) / 3);
+  }
+
+  #services .container .wrapper .services-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #services .container .wrapper .services-list > * {
+    width: calc((100% - 15px) / 2);
+  }
+
+  #about .container .wrapper .about-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #about .container .wrapper .about-content .text-container {
+    width: 50%;
+  }
+
+  #about .container .wrapper .about-content .spot-container {
+    width: 50%;
+  }
+
+  #about .container .wrapper .about-content .spot-container img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+
+  #reviews .container .wrapper .reviews-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #reviews .container .wrapper .reviews-list > * {
+    flex: 1;
+    flex-basis: calc((100% - (15px * 2)) / 2);
+  }
+}
+
+/* Extra Large Devices */
+
+@media (min-width: 1200px) {
+  header .container .wrapper #hamburger {
+    display: none;
+  }
+
+  header .container .wrapper #nav {
+    position: unset;
+    background-color: unset;
+    height: unset;
+    width: unset;
+    padding: unset;
+    margin: unset;
+    flex-direction: row;
+    display: flex;
+  }
+
+  header .container .wrapper #nav a {
+    color: var(--primary);
+  }
+
+  #hero {
+    background-image: url("./assets/images/background-horizontal.jpg");
+    background-position: center;
+    padding: 350px 0;
+  }
+
+  #hero .container .wrapper .text-container {
+    text-align: left;
+    text-shadow: 1px 1px 5px black;
+    max-width: 700px;
+  }
+
+  #hero .container .wrapper .text-container .tagline {
+    font-size: 58px;
+    line-height: 58px;
+    letter-spacing: -2px;
+  }
+
+  #menu .container .wrapper .product-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #menu .container .wrapper .product-list > * {
+    width: calc((100% - (15px * 3)) / 4);
+  }
+
+  #services .container .wrapper .services-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #services .container .wrapper .services-list > * {
+    width: calc((100% - calc(15px * 2)) / 3);
+  }
+
+  #about .container .wrapper .about-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #about .container .wrapper .about-content .text-container {
+    width: 50%;
+  }
+
+  #about .container .wrapper .about-content .spot-container {
+    width: 50%;
+  }
+
+  #about .container .wrapper .about-content .spot-container img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+
+  #reviews .container .wrapper .reviews-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #reviews .container .wrapper .reviews-list > * {
+    flex: 1;
+    flex-basis: calc((100% - (15px * 2)) / 3);
   }
 }
